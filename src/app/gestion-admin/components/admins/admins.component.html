@@ -2,30 +2,38 @@
   <table>
     <thead>
       <tr>
-        <th>Column 1</th>
-        <th>Column 2</th>
-        <th>Column 3</th>
-        <th>Column 4</th>
-        <th>Column 5</th>
+        <th>Id </th>
+        <th>nom</th>
+        <th>username</th>
+        <th>action</th>
       </tr>
     </thead>
     <tbody class="scroll">
-      <tr>
-        <td>Cell 1</td>
-        <td>Cell 2</td>
-        <td>Cell 3</td>
-        <td>Cell 4</td>
-        <td>Cell 5</td>
+      <tr *ngFor="let admin of admins">
+        <td> {{admin.Id}}</td>
+        <td>{{admin.nom}}</td>
+        <td>{{admin.username}}</td>
+        <td><div>
+          <button mat-icon-button>
+            <mat-icon>delete</mat-icon>
+          </button>
+          
+        </div></td>
       </tr>
      
-    
-      <tr>
-        <td>Cell 1</td>
-        <td>Cell 2</td>
-        <td>Cell 3</td>
-        <td>Cell 4</td>
-        <td>Cell 5</td>
+      <tr >
+        <td> asdfg</td>
+        <td>zdfg</td>
+        <td>asdf</td>
+        <td><div>
+          <button mat-icon-button>
+            <mat-icon>delete</mat-icon>
+          </button>
+          
+        </div></td>
       </tr>
+    
+      
     </tbody>
   </table>
 </div>

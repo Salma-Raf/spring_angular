@@ -7,7 +7,7 @@ import { api } from 'src/app/api';
 @Injectable({
   providedIn: 'root',
 })
-export class serviceAdmin {
+export class ServiceAdmin {
 
   private admins: Admin[] = [];
 

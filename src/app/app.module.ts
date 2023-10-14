@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatIconModule } from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,7 @@ import { EtudiantsComponent } from './gestion-etudiant/components/etudiants/etud
 import { ModulesComponent } from './gestion-module/components/modules/modules.component';
 import { SemestresComponent } from './gestion-semester/components/semestres/semestres.component';
 import { FilieresComponent } from './gestion-filiere/filieres/filieres.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { FilieresComponent } from './gestion-filiere/filieres/filieres.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatIconModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
