@@ -7,8 +7,14 @@
         <th>Action</th>
       </tr>
     </thead>
-    <tbody class="scroll" *ngFor="let semestre of semestres">
-      <tr>
+    <tbody class="scroll">
+      <td>2</td>
+      <td>SpringBoot</td>
+      <td>
+        <mat-icon class="edit-icon">edit</mat-icon>
+        <mat-icon class="delete-icon">delete</mat-icon>
+      </td>
+      <tr *ngFor="let semestre of semestres">
         <td>{{ semestre.id }}</td>
         <td>{{ semestre.libelle }}</td>
         <td></td>

@@ -21,6 +21,7 @@ import { ModulesComponent } from './gestion-module/components/modules/modules.co
 import { SemestresComponent } from './gestion-semester/components/semestres/semestres.component';
 import { FilieresComponent } from './gestion-filiere/filieres/filieres.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -40,15 +41,10 @@ import { HttpClientModule } from '@angular/common/http';
     EtudiantsComponent,
     ModulesComponent,
     SemestresComponent,
-    FilieresComponent
+    FilieresComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    MatIconModule,
-    HttpClientModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, MatIconModule, HttpClientModule, BrowserAnimationsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

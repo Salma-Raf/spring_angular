@@ -5,24 +5,19 @@
         <th>Id</th>
         <th>nom</th>
         <th>username</th>
-        <th>mdp</th>
         <th>Action</th>
       </tr>
     </thead>
     <tbody class="scroll">
-      <tr>
-        <td>Cell 1</td>
-        <td>Cell 2</td>
-        <td>Cell 3</td>
-        <td>Cell 4</td>
-        <td>Cell 5</td>
-      </tr>
-      <tr>
-        <td>Cell 1</td>
-        <td>Cell 2</td>
-        <td>Cell 3</td>
-        <td>Cell 4</td>
-        <td>Cell 5</td>
+      <td>1</td>
+      <td>salma</td>
+      <td>slima</td>
+      <td></td>
+      <tr *ngFor="let prof of profs">
+        <td>{{ prof.Id }}</td>
+        <td>{{ prof.nom }}</td>
+        <td>{{ prof.username }}</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

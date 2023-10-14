@@ -2,7 +2,9 @@ import { HttpClient } from '@angular/common/http';
 import { api } from 'src/app/api';
 import { Semestre } from '../model/semestre.model';
 import { Observable, BehaviorSubject } from 'rxjs';
+import { Injectable } from '@angular/core';
 
+@Injectable({ providedIn: 'root' })
 export class SemestreService {
   constructor(private http: HttpClient) {}
 
