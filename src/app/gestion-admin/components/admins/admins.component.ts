@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
+import { Admin } from '../../model/admin.model';
 
 @Component({
   selector: 'app-admins',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AdminsComponent {
 
+  @Input() admins!:Admin[];
 }
